@@ -15,14 +15,17 @@ body {
   position: relative;
 }
 
-@font-face {
-    font-family: 'sonderregular';
-    src: url('sonderregular-webfont.woff2') format('woff2'),
-         url('sonderregular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+*{
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px,1px,1px rgba(0,0,0,0.0004);
 }
+
+@font-face{ 
+	font-family: 'SonderRegular';
+	src: url('SonderRegular.otf');
+	src: url('SonderRegular.eot?#iefix') format('embedded-opentype'),
+	     url('sonderregular-webfont.woff') format('woff'),
+      }
 
 body:before {
   content: "";
